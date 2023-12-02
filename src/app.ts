@@ -4,7 +4,7 @@ import cors from "cors"
 import todoRoutes from "./routes"
 import bodyParser from "body-parser"
 
-const config = require("../config/config.dev.json");
+const config = require("../../config/config.dev.json");
 const app: Express = express()
 const PORT: string | number = config.PORT
 const uri: string = config.MONGO_URL || "";
